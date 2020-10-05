@@ -47,6 +47,7 @@ pipelines:
           onExecute:
             - echo $run_var  
             - echo $res_myBuildInfo_buildNumber
+
       - name: step_3
         type: Bash
         configuration:
@@ -57,6 +58,7 @@ pipelines:
         execution:
           onExecute:
             - echo $step_env_var1
+
       - name: step_4
         type: Bash
         configuration:
